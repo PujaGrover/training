@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean id="student" class="com.hcsc.spring.di.collections.Student">
+		<property name="rollNo" value="1234" />
+		<property name="stdname" value="MMMMMM" />
+		<property name="subjects">
+			<list>
+				<!-- <bean class="com.hcsc.spring.di.collections.Subject">
+					<property name="name" value="Maths" />
+					<property name="marks" value="99" />
+				</bean>
+				<bean class="com.hcsc.spring.di.collections.Subject">
+					<property name="name" value="Physics" />
+					<property name="marks" value="89" />
+				</bean> -->
+				<ref bean="sub1" />
+				<ref bean="sub2" />
+				<ref bean="sub3" />
+			</list>
+		</property>
+	</bean>
+	<bean id="sub1" class="com.hcsc.spring.di.collections.Subject">
+		<property name="name" value="Maths" />
+		<property name="marks" value="99" />
+	</bean>
+	<bean id="sub2" class="com.hcsc.spring.di.collections.Subject">
+		<property name="name" value="Physics" />
+		<property name="marks" value="89" />
+	</bean>
+	<bean id="sub3" class="com.hcsc.spring.di.collections.Subject">
+		<property name="name" value="chemistry" />
+		<property name="marks" value="100" />
+	</bean>
+</beans>

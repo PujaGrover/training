@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE empdetails SYSTEM "empdetails.dtd">
+<empdetails>
+	<emp>
+		<empno>1234</empno>
+		<ename>sri</ename>
+	</emp>
+	<emp>
+		<empno>1235</empno>
+		<ename>kireet</ename>
+	</emp>
+        <emp>
+		<empno>1236</empno>
+		<ename>Pavan</ename>
+	</emp>
+        <emp>
+		<empno>1237</empno>
+		<ename>Siva</ename>
+	</emp>
+	<dept>
+		<deptno>10</deptno>
+		<dname>Java</dname>
+	</dept>
+	<dept>
+		<deptno>20</deptno>
+		<dname>Warehousing</dname>
+	</dept>
+        <dept>
+		<deptno>30</deptno>
+		<dname>AdminAppServer</dname>
+	</dept>
+	<dept>
+		<deptno>40</deptno>
+		<dname>Java</dname>
+	</dept>
+
+</empdetails>

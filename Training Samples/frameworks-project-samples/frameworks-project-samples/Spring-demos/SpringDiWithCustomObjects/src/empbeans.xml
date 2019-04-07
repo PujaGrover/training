@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN" "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+	
+	<bean id="emp" class="com.bcbs.spring.di.Emp">
+		<constructor-arg index="0" value="1111" />
+		<constructor-arg index="1" ref="address" />
+		<constructor-arg index="2" value="Venkata Saranu" />
+		<constructor-arg index="3" value="Java Developer" />
+		<constructor-arg index="4" value="5000" />
+	</bean>
+	
+	<bean class="com.bcbs.spring.di.DisplayBean"/>
+	
+	<bean id="address" class="com.bcbs.spring.di.Address">
+		<property name="streetName" value="1001 E Lookout Dr" />
+		<property name="unit" value="5" />
+		<property name="city" value="Richardson" />
+		<property name="state" value="TX" />
+		<property name="zip" value="75082" />
+	</bean>
+	
+</beans>
