@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
-<properties>
-<comment>This is DB XML</comment>
-<entry key="url">jdbc:mysql://localhost:1238/j2se2k13</entry>
-<entry key="password">123456</entry>
-<entry key="driver">com.mysql.jdbc.Driver</entry>
-<entry key="username">root</entry>
-</properties>
